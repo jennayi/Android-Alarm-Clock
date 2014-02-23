@@ -2,6 +2,7 @@ package za.co.neilson.alarm.alert;
 
 import za.co.neilson.alarm.Alarm;
 import za.co.neilson.alarm.R;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
@@ -39,6 +40,8 @@ public class AlarmAlertActivity extends Activity implements OnClickListener {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		ActionBar actionBar = getActionBar();
+		actionBar.hide();
 		super.onCreate(savedInstanceState);
 		final Window window = getWindow();
 		window.addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED
@@ -69,8 +72,10 @@ public class AlarmAlertActivity extends Activity implements OnClickListener {
 		if (answerString.endsWith(".0")) {
 			answerString = answerString.substring(0, answerString.length() - 2);
 		}
+		((Button) findViewById(R.id.dismiss)).setOnClickListener(this);
+		((Button) findViewById(R.id.snooze)).setOnClickListener(this);
 
-		problemView = (TextView) findViewById(R.id.textView1);
+		/*problemView = (TextView) findViewById(R.id.textView1);
 		problemView.setText(mathProblem.toString());
 
 		answerView = (TextView) findViewById(R.id.textView2);
@@ -88,7 +93,7 @@ public class AlarmAlertActivity extends Activity implements OnClickListener {
 		((Button) findViewById(R.id.Button9)).setOnClickListener(this);
 		((Button) findViewById(R.id.Button_clear)).setOnClickListener(this);
 		((Button) findViewById(R.id.Button_decimal)).setOnClickListener(this);
-		((Button) findViewById(R.id.Button_minus)).setOnClickListener(this);
+		((Button) findViewById(R.id.Button_minus)).setOnClickListener(this);*/
 
 		TelephonyManager telephonyManager = (TelephonyManager) this
 				.getSystemService(Context.TELEPHONY_SERVICE);
@@ -207,7 +212,7 @@ public class AlarmAlertActivity extends Activity implements OnClickListener {
 	public void onClick(View v) {
 		if (!alarmActive)
 			return;
-		String button = (String) v.getTag();
+		/*String button = (String) v.getTag();
 		v.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
 		if (button.equalsIgnoreCase("clear")) {
 			if (answerBuilder.length() > 0) {
@@ -245,13 +250,28 @@ public class AlarmAlertActivity extends Activity implements OnClickListener {
 				}
 				this.finish();
 			}
+		
 		}
 		if (answerView.getText().length() >= answerString.length()
 				&& !isAnswerCorrect()) {
 			answerView.setTextColor(Color.RED);
 		} else {
 			answerView.setTextColor(Color.WHITE);
+		}*/
+		alarmActive = false;
+		if (vibrator != null)
+			vibrator.cancel();
+		try {
+			mediaPlayer.stop();
+		} catch (IllegalStateException ise) {
+
 		}
+		try {
+			mediaPlayer.release();
+		} catch (Exception e) {
+
+		}
+		this.finish();
 	}
 
 	public boolean isAnswerCorrect() {
