@@ -23,6 +23,7 @@
         android:layout_below="@+id/alarms"
         android:layout_centerHorizontal="true"
         android:text="View Balances"
+        android:onClick="donate"
         android:textColor="@color/blue" />
 
     <Button

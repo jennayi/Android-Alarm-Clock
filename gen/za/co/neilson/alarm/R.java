@@ -35,41 +35,51 @@ public final class R {
         public static final int plus=0x7f020002;
     }
     public static final class id {
-        public static final int action_settings=0x7f090014;
+        public static final int action_settings=0x7f090018;
         public static final int alarms=0x7f090002;
-        public static final int button_delete=0x7f09000f;
-        public static final int button_new=0x7f090006;
-        public static final int checkBox_alarm_active=0x7f09000b;
+        public static final int analytics=0x7f090005;
+        public static final int button_delete=0x7f090013;
+        public static final int button_new=0x7f09000b;
+        public static final int checkBox_alarm_active=0x7f09000f;
         public static final int digitalClock1=0x7f090000;
-        public static final int dismiss=0x7f090009;
+        public static final int dismiss=0x7f09000d;
         public static final int donate=0x7f090001;
-        public static final int imageButton1=0x7f090008;
+        public static final int editText1=0x7f090006;
+        public static final int imageButton1=0x7f090004;
         public static final int imageView1=0x7f090003;
-        public static final int menu_item_rate=0x7f090015;
-        public static final int menu_item_report=0x7f090017;
-        public static final int menu_item_website=0x7f090016;
-        public static final int okCancel=0x7f090011;
-        public static final int okCancel_border_top=0x7f090010;
-        public static final int snooze=0x7f09000a;
-        public static final int textView_OK=0x7f090013;
-        public static final int textView_alarm_days=0x7f09000e;
-        public static final int textView_alarm_time=0x7f09000d;
-        public static final int textView_cancel=0x7f090012;
-        public static final int textView_title_bar=0x7f090005;
-        public static final int title_border_bottom=0x7f090007;
-        public static final int toolbar=0x7f090004;
-        public static final int view1=0x7f09000c;
+        public static final int menu_item_rate=0x7f090019;
+        public static final int menu_item_report=0x7f09001b;
+        public static final int menu_item_website=0x7f09001a;
+        public static final int okCancel=0x7f090015;
+        public static final int okCancel_border_top=0x7f090014;
+        public static final int snooze=0x7f09000e;
+        public static final int submit=0x7f090008;
+        public static final int textView1=0x7f090007;
+        public static final int textView_OK=0x7f090017;
+        public static final int textView_alarm_days=0x7f090012;
+        public static final int textView_alarm_time=0x7f090011;
+        public static final int textView_cancel=0x7f090016;
+        public static final int textView_title_bar=0x7f09000a;
+        public static final int title_border_bottom=0x7f09000c;
+        public static final int toolbar=0x7f090009;
+        public static final int view1=0x7f090010;
     }
     public static final class layout {
-        public static final int activity_main_page=0x7f030000;
-        public static final int alarm_activity=0x7f030001;
-        public static final int alarm_alert=0x7f030002;
-        public static final int alarm_list_element=0x7f030003;
-        public static final int alarm_preferences=0x7f030004;
+        public static final int activity_graphs=0x7f030000;
+        public static final int activity_main_page=0x7f030001;
+        public static final int activity_submission=0x7f030002;
+        public static final int activity_wallet_balance=0x7f030003;
+        public static final int alarm_activity=0x7f030004;
+        public static final int alarm_alert=0x7f030005;
+        public static final int alarm_list_element=0x7f030006;
+        public static final int alarm_preferences=0x7f030007;
     }
     public static final class menu {
-        public static final int main_page=0x7f080000;
-        public static final int menu=0x7f080001;
+        public static final int graphs=0x7f080000;
+        public static final int main_page=0x7f080001;
+        public static final int menu=0x7f080002;
+        public static final int submission=0x7f080003;
+        public static final int wallet_balance=0x7f080004;
     }
     public static final class string {
         /**  Alert 
@@ -102,8 +112,11 @@ public final class R {
         public static final int minus_button_text=0x7f060013;
         public static final int no_alarms=0x7f060002;
         public static final int ok=0x7f060015;
+        public static final int title_activity_graphs=0x7f06001c;
         public static final int title_activity_main_page=0x7f060017;
         public static final int title_activity_set_alarms=0x7f060001;
+        public static final int title_activity_submission=0x7f06001b;
+        public static final int title_activity_wallet_balance=0x7f06001a;
     }
     public static final class style {
         /** 
