@@ -4,6 +4,7 @@ import java.util.Calendar;
 
 import za.co.neilson.alarm.Alarm;
 import za.co.neilson.alarm.AlarmActivity;
+import za.co.neilson.alarm.MainPage;
 import za.co.neilson.alarm.database.Database;
 import za.co.neilson.alarm.preferences.AlarmPreference.Key;
 import za.co.neilson.alarm.service.AlarmServiceBroadcastReciever;
@@ -468,5 +469,10 @@ public class AlarmPreferencesActivity extends ListActivity {
 			break;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	@Override
+	public void onBackPressed(){
+		startActivity(new Intent(this, MainPage.class));
 	}
 }

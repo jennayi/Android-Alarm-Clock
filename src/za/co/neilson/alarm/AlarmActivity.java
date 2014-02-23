@@ -1,5 +1,7 @@
 package za.co.neilson.alarm;
 
+
+
 import za.co.neilson.alarm.database.Database;
 import za.co.neilson.alarm.preferences.AlarmPreferencesActivity;
 import za.co.neilson.alarm.service.AlarmServiceBroadcastReciever;
@@ -243,6 +245,11 @@ public class AlarmActivity extends ListActivity implements
 	}
 	
 	public void goHome(View view){
+		startActivity(new Intent(this, MainPage.class));
+	}
+	
+	@Override
+	public void onBackPressed(){
 		startActivity(new Intent(this, MainPage.class));
 	}
 }

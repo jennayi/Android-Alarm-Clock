@@ -3,7 +3,9 @@ package za.co.neilson.alarm;
 import android.os.Bundle;
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
+import android.view.View;
 
 public class Graphs extends Activity {
 
@@ -20,6 +22,14 @@ public class Graphs extends Activity {
 		actionBar.hide();
 		getMenuInflater().inflate(R.menu.graphs, menu);
 		return true;
+	}
+	
+	public void goHome(View view){
+		startActivity(new Intent(this, MainPage.class));
+	}
+	@Override
+	public void onBackPressed(){
+		startActivity(new Intent(this, MainPage.class));
 	}
 
 }

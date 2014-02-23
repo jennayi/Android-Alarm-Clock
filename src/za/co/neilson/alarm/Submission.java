@@ -31,5 +31,9 @@ public class Submission extends Activity {
 	public void goHome(View view){
 		startActivity(new Intent(this, MainPage.class));
 	}
-
+	
+	@Override
+	public void onBackPressed(){
+		startActivity(new Intent(this, MainPage.class));
+	}
 }

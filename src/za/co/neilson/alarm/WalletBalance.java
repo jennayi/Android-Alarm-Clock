@@ -6,9 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 
 public class WalletBalance extends Activity {
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		ActionBar actionBar = getActionBar();
@@ -24,6 +24,11 @@ public class WalletBalance extends Activity {
 		return true;
 	}
 	public void submit(View view){
+		//((Button) findViewById(R.id.amount)).setText("");
 		startActivity(new Intent(this, Submission.class));
+	}
+	@Override
+	public void onBackPressed(){
+		startActivity(new Intent(this, MainPage.class));
 	}
 }
