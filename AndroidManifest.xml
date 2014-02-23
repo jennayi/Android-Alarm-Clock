@@ -10,54 +10,62 @@
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.VIBRATE" />
-	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-	
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        
+         <activity
+            android:name="za.co.neilson.alarm.MainPage"
+            android:label="@string/title_activity_main_page" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="za.co.neilson.alarm.AlarmActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+
             </intent-filter>
         </activity>
-        
         <activity
             android:name="za.co.neilson.alarm.preferences.AlarmPreferencesActivity"
             android:label="@string/app_name" >
-        </activity>        
-        
+        </activity>
+
         <service
-            android:process="za.co.neilson.alarm.serviceProcess"
             android:name="za.co.neilson.alarm.service.AlarmService"
-            android:icon="@drawable/ic_launcher"
             android:label="@string/app_name"
-            >
+            android:process="za.co.neilson.alarm.serviceProcess" >
         </service>
-		<receiver android:name="za.co.neilson.alarm.service.AlarmServiceBroadcastReciever" >
+
+        <receiver android:name="za.co.neilson.alarm.service.AlarmServiceBroadcastReciever" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        
+
         <activity
-            android:name = "za.co.neilson.alarm.alert.AlarmAlertActivity"
+            android:name="za.co.neilson.alarm.alert.AlarmAlertActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>
-		<receiver android:name="za.co.neilson.alarm.alert.AlarmAlertBroadcastReciever" >
+
+        <receiver android:name="za.co.neilson.alarm.alert.AlarmAlertBroadcastReciever" >
         </receiver>
-        <receiver android:name = "za.co.neilson.alarm.telephony.PhoneStateChangedBroadcastReciever">
+        <receiver android:name="za.co.neilson.alarm.telephony.PhoneStateChangedBroadcastReciever" >
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE" />
             </intent-filter>
         </receiver>
+
+       
     </application>
 
 </manifest>

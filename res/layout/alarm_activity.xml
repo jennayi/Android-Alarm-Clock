@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" 
-    android:background = "@color/white"
-    android:textColor="@color/blue">
-
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:textColor="@color/blue" >
 
     <LinearLayout
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         android:orientation="horizontal"
-        android:background = "@color/white"
-        android:textColor="@color/blue">
+        android:textColor="@color/blue" >
 
         <TextView
             android:id="@+id/textView_title_bar"
@@ -24,18 +23,16 @@
             android:paddingLeft="5dp"
             android:text="@string/app_name"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor = "@color/blue"/>
+            android:textColor="@color/blue" />
 
         <ImageButton
             android:id="@+id/button_new"
             android:layout_width="0dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85"
             android:background="@android:color/white"
             android:contentDescription="@string/button_new"
-			
             android:src="@drawable/plus" />
-
     </LinearLayout>
 
     <View
@@ -43,25 +40,40 @@
         android:layout_width="fill_parent"
         android:layout_height="2dp"
         android:layout_margin="0dp"
-        android:padding="0dp"
-        android:background="@color/blue" />
+        android:background="@color/blue"
+        android:padding="0dp" />
 
-    <ListView
-        android:id="@android:id/list"
+    <ImageButton
+        android:id="@+id/imageButton1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:longClickable="true"
-        android:background = "@color/white"
-        android:textColor = "@color/blue" >
-    </ListView>
+        android:src="@drawable/home"
+        android:onClick = "goHome"
+       	android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/blue" />
 
     <TextView
         android:id="@android:id/empty"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton1"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white"
         android:padding="10dp"
         android:text="@string/no_alarms"
-        android:textColor="@color/blue"
-        android:background = "@color/white" />
+        android:textColor="@color/blue" />
 
-</LinearLayout>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="317dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/white"
+        android:longClickable="true"
+        android:textColor="@color/blue" >
+    </ListView>
+
+</RelativeLayout>

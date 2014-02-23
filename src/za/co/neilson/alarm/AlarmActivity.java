@@ -66,7 +66,11 @@ public class AlarmActivity extends ListActivity implements
 				return true;
 			}
 		});
-
+		
+		Intent newAlarmIntent = new Intent(AlarmActivity.this,
+				AlarmPreferencesActivity.class);
+		startActivity(newAlarmIntent);
+		
 		mathAlarmListView = (ListView) findViewById(android.R.id.list);
 
 		mathAlarmListView.setLongClickable(true);
@@ -237,5 +241,8 @@ public class AlarmActivity extends ListActivity implements
 		}
 		return super.onOptionsItemSelected(item);
 	}
-
+	
+	public void goHome(View view){
+		startActivity(new Intent(this, MainPage.class));
+	}
 }

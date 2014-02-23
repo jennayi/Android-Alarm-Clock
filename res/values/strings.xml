@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<!-- Application -->
-	<color name="holo_blue_light">#ff33b5e5</color>
-	
+
+    <!-- Application -->
+    <color name="holo_blue_light">#ff33b5e5</color>
+
     <!-- Math Alarm Activity -->
     <string name="app_name">Alarm Clock</string>
     <string name="title_activity_set_alarms">Set Alarm</string>
     <string name="no_alarms">No alarms have been set</string>
-    
     <string name="button_new">New</string>
-    
+
     <!-- Menu -->
     <string name="menu_item_rate">Rate on Goolge Play</string>
     <string name="menu_item_website">Website</string>
     <string name="menu_item_report">Report a Bug</string>
-    
+
     <!-- Alert -->
-	<string name="_0">0</string>
+    <string name="_0">0</string>
     <string name="_1">1</string>
     <string name="_2">2</string>
     <string name="_3">3</string>
@@ -27,17 +27,21 @@
     <string name="_8">8</string>
     <string name="_9">9</string>
     <string name="decimal_button_text">,</string>
-	<string name="clear_button_text">Clear</string>
-	<string name="minus_button_text">-</string>
-	
-	
-	<color name="title_background_color">#000000</color>
-		
-	<string name="button_delete">Delete</string>
-	<string name="ok">OK</string>
-	<string name="cancel">Cancel</string>
-	<color name="blue">#0191d8</color>
-	<color name="white">#FFFF</color>
-	<color name="black">#0000</color>
+    <string name="clear_button_text">Clear</string>
+    <string name="minus_button_text">-</string>
+
+    <color name="title_background_color">#000000</color>
+
+    <string name="button_delete">Delete</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <color name="blue">#0191d8</color>
+    <color name="white">#FFFF</color>
+    <color name="black">#0000</color>
+
+    <string name="title_activity_main_page">MainPage</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
