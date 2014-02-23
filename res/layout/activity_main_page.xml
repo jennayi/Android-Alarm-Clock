@@ -7,14 +7,12 @@
         android:id="@+id/digitalClock1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="111dp"
-        android:text="DigitalClock"
-        android:textSize="75dp" 
         android:layout_centerHorizontal="true"
-	    android:layout_centerVertical="true"
-	    android:textColor="@color/blue"/>
+        android:layout_marginTop="117dp"
+        android:text="DigitalClock"
+        android:textColor="@color/blue"
+        android:textSize="75dp" />
 
     <Button
         android:id="@+id/donate"
@@ -22,8 +20,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/alarms"
         android:layout_centerHorizontal="true"
-        android:text="View Balances"
         android:onClick="donate"
+        android:text="View Balances"
         android:textColor="@color/blue" />
 
     <Button
@@ -32,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/digitalClock1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="44dp"
         android:onClick="alarms"
         android:text="Set Alarms"
         android:textColor="@color/blue" />
@@ -43,9 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/donate"
         android:adjustViewBounds="true"
-        android:background="@drawable/goodwill" />
+        android:src="@raw/goodwilllogo" />
 
 </RelativeLayout>
