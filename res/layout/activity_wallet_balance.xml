@@ -34,7 +34,7 @@
         android:layout_marginTop="67dp"
         android:textColor="@color/blue"
         android:textSize="20sp"
-        android:text="Please insert amount you would like to donate this week:" />
+        android:text="Please insert amount you would like to subscribe this week:" />
 
     <Button
         android:id="@+id/submit"

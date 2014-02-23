@@ -1,10 +1,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+	android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    android:textColor="@color/blue">
+    android:textColor="@color/blue" >
 
     <ImageButton
         android:id="@+id/imageButton1"
@@ -17,25 +17,25 @@
         android:onClick="goHome"
         android:src="@drawable/home" />
 
-    <Button
-        android:id="@+id/analytics"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/imageButton1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="14dp"
-        android:text="View Analytics"
-        android:textColor="@color/blue"
-        android:onClick="analytics" />
-
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="78dp"
-        android:text="Thank you for your subscription!"
+        android:text="Thank you for your support!"
         android:textColor="@color/blue"
         android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="SFGoodwill creates solutions to poverty through the businesses we operate. By playing a critical role in helping people rise from poverty into the middle class, Goodwill is preserving the economic diversity that is a hallmark of Bay Area culture. And by diverting over 20 million pounds from local landfills each year, we’re helping make progress toward our community’s goal of zero waste. "
+        android:textColor="#7CFC00"
+        android:textSize="15sp" />
 
 </RelativeLayout>

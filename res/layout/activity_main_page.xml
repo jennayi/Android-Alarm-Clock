@@ -21,8 +21,9 @@
         android:layout_below="@+id/alarms"
         android:layout_centerHorizontal="true"
         android:onClick="donate"
-        android:text="View Balances"
+        android:text="Manage Subscriptions"
         android:textColor="@color/blue" />
+    
 
     <Button
         android:id="@+id/alarms"
@@ -30,7 +31,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/digitalClock1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="44dp"
         android:onClick="alarms"
         android:text="Set Alarms"
         android:textColor="@color/blue" />
@@ -43,5 +43,28 @@
         android:layout_alignParentLeft="true"
         android:adjustViewBounds="true"
         android:src="@raw/goodwilllogo" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView1"
+       	android:onClick="about"
+        android:textColor = "#0000"
+        android:text = "#0000"
+        android:background = "#0000" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/donate"
+        android:layout_centerHorizontal="true"
+        android:onClick="subscribe"
+        android:text="Track Donations"
+        android:textColor="@color/blue" />
 
 </RelativeLayout>

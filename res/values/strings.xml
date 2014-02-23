@@ -46,5 +46,7 @@
     <string name="title_activity_wallet_balance">WalletBalance</string>
     <string name="title_activity_submission">Submission</string>
     <string name="title_activity_graphs">Graphs</string>
+    <string name="title_activity_track_donations">TrackDonations</string>
+    <string name="title_activity_about">About</string>
 
 </resources>

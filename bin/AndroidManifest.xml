@@ -76,6 +76,14 @@
             android:name="za.co.neilson.alarm.Graphs"
             android:label="@string/title_activity_graphs" >
         </activity>
+        <activity
+            android:name="za.co.neilson.alarm.TrackDonations"
+            android:label="@string/title_activity_track_donations" >
+        </activity>
+        <activity
+            android:name="za.co.neilson.alarm.About"
+            android:label="@string/title_activity_about" >
+        </activity>
     </application>
 
 </manifest>

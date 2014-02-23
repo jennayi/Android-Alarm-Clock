@@ -30,66 +30,75 @@ public final class R {
         public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static final int goodwill=0x7f020000;
-        public static final int graph=0x7f020001;
-        public static final int home=0x7f020002;
-        public static final int plus=0x7f020003;
+        public static final int about=0x7f020000;
+        public static final int goodwill=0x7f020001;
+        public static final int graph=0x7f020002;
+        public static final int home=0x7f020003;
+        public static final int plus=0x7f020004;
+        public static final int sfg=0x7f020005;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a001b;
+        public static final int action_settings=0x7f0a001d;
         public static final int alarms=0x7f0a0007;
-        public static final int amount=0x7f0a000a;
-        public static final int analytics=0x7f0a0008;
-        public static final int button_delete=0x7f0a0016;
-        public static final int button_new=0x7f0a000e;
-        public static final int checkBox_alarm_active=0x7f0a0012;
+        public static final int amount=0x7f0a000c;
+        public static final int analytics=0x7f0a0009;
+        public static final int button1=0x7f0a0008;
+        public static final int button_delete=0x7f0a0018;
+        public static final int button_new=0x7f0a0010;
+        public static final int checkBox_alarm_active=0x7f0a0014;
         public static final int digitalClock1=0x7f0a0005;
-        public static final int dismiss=0x7f0a0010;
+        public static final int dismiss=0x7f0a0012;
         public static final int donate=0x7f0a0006;
-        public static final int editText1=0x7f0a0009;
-        public static final int imageButton1=0x7f0a0001;
+        public static final int editText1=0x7f0a000b;
+        public static final int imageButton1=0x7f0a0000;
         public static final int imageView1=0x7f0a0004;
-        public static final int menu_item_rate=0x7f0a001c;
-        public static final int menu_item_report=0x7f0a001e;
-        public static final int menu_item_website=0x7f0a001d;
-        public static final int okCancel=0x7f0a0018;
-        public static final int okCancel_border_top=0x7f0a0017;
-        public static final int snooze=0x7f0a0011;
-        public static final int submit=0x7f0a000b;
-        public static final int textView1=0x7f0a0003;
-        public static final int textView2=0x7f0a0002;
-        public static final int textView3=0x7f0a0000;
-        public static final int textView_OK=0x7f0a001a;
-        public static final int textView_alarm_days=0x7f0a0015;
-        public static final int textView_alarm_time=0x7f0a0014;
-        public static final int textView_cancel=0x7f0a0019;
-        public static final int textView_title_bar=0x7f0a000d;
-        public static final int title_border_bottom=0x7f0a000f;
-        public static final int toolbar=0x7f0a000c;
-        public static final int view1=0x7f0a0013;
+        public static final int imageView2=0x7f0a000a;
+        public static final int menu_item_rate=0x7f0a001e;
+        public static final int menu_item_report=0x7f0a0020;
+        public static final int menu_item_website=0x7f0a001f;
+        public static final int okCancel=0x7f0a001a;
+        public static final int okCancel_border_top=0x7f0a0019;
+        public static final int snooze=0x7f0a0013;
+        public static final int submit=0x7f0a000d;
+        public static final int textView1=0x7f0a0001;
+        public static final int textView2=0x7f0a0003;
+        public static final int textView3=0x7f0a0002;
+        public static final int textView_OK=0x7f0a001c;
+        public static final int textView_alarm_days=0x7f0a0017;
+        public static final int textView_alarm_time=0x7f0a0016;
+        public static final int textView_cancel=0x7f0a001b;
+        public static final int textView_title_bar=0x7f0a000f;
+        public static final int title_border_bottom=0x7f0a0011;
+        public static final int toolbar=0x7f0a000e;
+        public static final int view1=0x7f0a0015;
     }
     public static final class layout {
-        public static final int activity_graphs=0x7f030000;
-        public static final int activity_main_page=0x7f030001;
-        public static final int activity_submission=0x7f030002;
-        public static final int activity_wallet_balance=0x7f030003;
-        public static final int alarm_activity=0x7f030004;
-        public static final int alarm_alert=0x7f030005;
-        public static final int alarm_list_element=0x7f030006;
-        public static final int alarm_preferences=0x7f030007;
+        public static final int activity_about=0x7f030000;
+        public static final int activity_graphs=0x7f030001;
+        public static final int activity_main_page=0x7f030002;
+        public static final int activity_submission=0x7f030003;
+        public static final int activity_track_donations=0x7f030004;
+        public static final int activity_wallet_balance=0x7f030005;
+        public static final int alarm_activity=0x7f030006;
+        public static final int alarm_alert=0x7f030007;
+        public static final int alarm_list_element=0x7f030008;
+        public static final int alarm_preferences=0x7f030009;
     }
     public static final class menu {
-        public static final int graphs=0x7f090000;
-        public static final int main_page=0x7f090001;
-        public static final int menu=0x7f090002;
-        public static final int submission=0x7f090003;
-        public static final int wallet_balance=0x7f090004;
+        public static final int about=0x7f090000;
+        public static final int graphs=0x7f090001;
+        public static final int main_page=0x7f090002;
+        public static final int menu=0x7f090003;
+        public static final int submission=0x7f090004;
+        public static final int track_donations=0x7f090005;
+        public static final int wallet_balance=0x7f090006;
     }
     public static final class raw {
         public static final int goodwilllogo=0x7f040000;
-        public static final int graphsample=0x7f040001;
-        public static final int home=0x7f040002;
-        public static final int plus=0x7f040003;
+        public static final int graph1=0x7f040001;
+        public static final int graphsample=0x7f040002;
+        public static final int home=0x7f040003;
+        public static final int plus=0x7f040004;
     }
     public static final class string {
         /**  Alert 
@@ -122,10 +131,12 @@ public final class R {
         public static final int minus_button_text=0x7f070013;
         public static final int no_alarms=0x7f070002;
         public static final int ok=0x7f070015;
+        public static final int title_activity_about=0x7f07001e;
         public static final int title_activity_graphs=0x7f07001c;
         public static final int title_activity_main_page=0x7f070017;
         public static final int title_activity_set_alarms=0x7f070001;
         public static final int title_activity_submission=0x7f07001b;
+        public static final int title_activity_track_donations=0x7f07001d;
         public static final int title_activity_wallet_balance=0x7f07001a;
     }
     public static final class style {

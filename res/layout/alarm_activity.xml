@@ -59,6 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/imageButton1"
         android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toolbar"
         android:background="@color/white"
         android:padding="10dp"
         android:text="@string/no_alarms"
