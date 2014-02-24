@@ -51,7 +51,7 @@ public final class R {
         public static final int donate=0x7f0a0006;
         public static final int editText1=0x7f0a000b;
         public static final int imageButton1=0x7f0a0000;
-        public static final int imageView1=0x7f0a0004;
+        public static final int imageView1=0x7f0a0003;
         public static final int imageView2=0x7f0a000a;
         public static final int menu_item_rate=0x7f0a001e;
         public static final int menu_item_report=0x7f0a0020;
@@ -61,8 +61,8 @@ public final class R {
         public static final int snooze=0x7f0a0013;
         public static final int submit=0x7f0a000d;
         public static final int textView1=0x7f0a0001;
-        public static final int textView2=0x7f0a0003;
-        public static final int textView3=0x7f0a0002;
+        public static final int textView2=0x7f0a0002;
+        public static final int textView3=0x7f0a0004;
         public static final int textView_OK=0x7f0a001c;
         public static final int textView_alarm_days=0x7f0a0017;
         public static final int textView_alarm_time=0x7f0a0016;

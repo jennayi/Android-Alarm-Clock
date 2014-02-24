@@ -30,5 +30,8 @@ public class TrackDonations extends Activity {
 	public void onBackPressed(){
 		startActivity(new Intent(this, MainPage.class));
 	}
+	public void goHome(View view){
+		startActivity(new Intent(this, MainPage.class));
+	}
 
 }
